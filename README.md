@@ -46,7 +46,7 @@ spartamarket은 개인 사용자가 자신의 물건을 등록하고, 다�
 
 <details>
 <summary>닉네임 또는 이메일이 중복일 경우</summary>
-![닉네임 또는 이메일이 중복일 경우](https://your-image-url.com/중복.PNG)
+![닉네임 또는 이메일이 중복일 경우](https://github.com/sang000000/DRF/raw/main/Nicknames_or_emails_are_duplicated.png)
 </details>
 
 <details>
