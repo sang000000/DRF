@@ -44,10 +44,13 @@ spartamarket은 개인 사용자가 자신의 물건을 등록하고, 다�
 
 ## **3. 실행 사진**
 
-<details>
-<summary>닉네임 또는 이메일이 중복일 경우</summary>
-![닉네임 또는 이메일이 중복일 경우](https://github.com/sang000000/DRF/raw/main/Nicknames_or_emails_are_duplicated.png)
-</details>
+
+<div style="overflow-x: auto; white-space: nowrap;">
+  <img src="https://github.com/sang000000/DRF/blob/main/Nicknames_or_emails_are_duplicated.png" alt="이미지1" style="display: inline-block; width: 200px;" />
+  <img src="이미지2 URL" alt="이미지2" style="display: inline-block; width: 200px;" />
+  <img src="이미지3 URL" alt="이미지3" style="display: inline-block; width: 200px;" />
+  <!-- 추가 이미지 -->
+</div>
 
 <details>
 <summary>필수 사항을 입력 안 했을 경우</summary>
