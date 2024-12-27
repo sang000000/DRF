@@ -16,7 +16,7 @@ class ArticleDetailSerializer(serializers.ModelSerializer):
     """게시글 상세 조회 및 생성 Serializer"""
     author = serializers.ReadOnlyField(source='author.email') # author 필드에 작성자의 이메일만 출력
     article_is_liked = serializers.SerializerMethodField() #좋아요 여부
-    image = serializers.ImageField()  # 커스텀 필드로 처리
+    image = serializers.ImageField()
     class Meta:
         model = Article
         fields = ('id', 'author', 'title', 'content', 'image', 'created_at', 'updated_at', 'view_count', 'article_is_liked')  # 조회수 필드 추가
