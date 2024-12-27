@@ -23,10 +23,7 @@ class ArticleListCreate(APIView):
         """게시글 생성"""
         serializer = ArticleDetailSerializer(data=request.data)  # 상세 Serializer 사용
         if serializer.is_valid():
-            print("FILES:", request.FILES) # 업로드된 파일 정보 확인
-            print("DATA:", request.data) # 요청 데이터 확인
             serializer.save(author=request.user)
-            print(serializer.errors)
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
@@ -65,7 +62,7 @@ class ArticleDetail(APIView):
             return Response({'detail': '수정 권한이 없습니다.'}, status=status.HTTP_403_FORBIDDEN)
         serializer = ArticleDetailSerializer(article, data=request.data)  # 상세 Serializer 사용
         if serializer.is_valid():
-            serializer.save()
+            serializer.save(author = article.author)
             return Response(serializer.data, status=status.HTTP_200_OK)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
     

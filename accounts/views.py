@@ -39,6 +39,7 @@ def login(request):
             return JsonResponse({
                 'access': str(refresh.access_token),
                 'refresh': str(refresh),
+                'username': user.username,
                 'message': '로그인 성공'
             }, status=200)
         else:
